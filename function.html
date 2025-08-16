@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+{% block body %}
+    <div class="container" >
+        <h1 class="text-center">Try Prok</h1>
+        <h2 class="text-center bottom-one">Get Your Personalized Recommendations</h2>
+    </div>  
+    
+    <div class="container text-center bottom-zero">
+        <h3>Choose a Mode</h3> 
+    </div>
+
+    <form action="/function" method="post" class = "container text-center bottom-one">
+        <div>
+            <button class = "btn btn-primary btn-lg bottom-zero "type="submit" name = "mode" value = "1">Mode 1: Recommend up to 50 songs</button>
+        </div>
+            
+        <div>
+            <button class = "btn btn-primary btn-lg bottom-zero "type="submit" name = "mode" value = "2">Mode 2: Recommend up to 20 songs</button>
+        </div>
+
+        <div>
+            <button class = "btn btn-primary btn-lg "type="submit" name = "mode" value = "3">Mode 3: Recommend up to 10 songs</button>            
+        </div>
+    </form>
+
+    </div>
+        <div class="container text-center bottom-two">
+        <a href="{{ url_for('instructions') }}" class="btn btn-primary btn-lg" role="button">Instructions on How to Use Prok</a>
+    </div>
+
+    <video width = 1470px autoplay loop muted margins="0" style="display: block; margin: 0 auto;">
+        <source src="{{ url_for('static', filename='music_player.mp4') }}" type="video/mp4">
+    </video>
+
+{% endblock %}

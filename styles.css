@@ -1,0 +1,71 @@
+.bottom-one {
+  margin-bottom: 0.7cm;
+}
+.bottom-zero {
+  margin-bottom: 0.3cm;
+}
+.bottom-two{
+  margin-bottom: 1.5cm;
+}
+
+.btn-primary {
+    background-color: #535353; /* e.g., #FF0000 for red */
+    border-color: #535353; /* Set border to match background for consistency */
+}
+
+.btn-primary:hover {
+    background-color: #1db954; /* hover state */
+    border-color: #1db954;
+}
+
+.btn-primary:active {
+    background-color: #1db954; /* click/active color */
+    border-color: #1db954;
+    
+}
+.btn-primary:focus {
+    background-color: #1db954 !important;
+    border-color: #1db954 !important;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #1db954; /* Change background color */
+}
+.navbar-inverse .navbar-brand:hover {
+    background-color: #000000; /* Change background color */
+    font-weight: bold;
+}
+.navbar-inverse .navbar-brand { /* Change background color */
+    font-weight: bold;
+}
+
+.container1 {
+    max-width: 850px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.form-control:focus {
+        border-color: #1db954;
+        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    } 
+.numbercol40 {
+    width: 40px;
+}
+.numbercol150 {
+    width: 500px;
+}
+.numbercol250{
+    background-color: rgba(163, 234, 177, 0.684)
+}
+.height{
+    height: 100px;
+}
+.dark{
+    background-color: #222222;
+    color: #d1d1d1;
+ /* Dark background */ /* Light text color */
+}
+
+tr:hover {
+    background-color: #1db954; /* Change to your desired hover color */
+    color: #222222; /* Change text color on hover if needed */
+}

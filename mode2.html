@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="container">
+        <h1 class="text-center">Your Recommendations</h1>
+        <h3 class="text-center bottom-one">Mode 1: See what we suggest!</h3>
+        <table class = "table table-striped table-bordered table-hover">
+            <thead class="dark">
+                <tr>
+                    <th class = "numbercol40 text-center" scope="col">#</th>
+                    <th class = "numbercol150" scope="col">Song</th>
+                    <th scope="col">Listen on Spotify</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for song in songs %}
+                    <tr scope="row" class = "height">
+                        <td class = "numbercol40 text-center"> {{ loop.index }} </td>
+                        <td class = "numbercol150">{{ song.name }} by {{song.artist}}</td> 
+                        <td><iframe src="https://open.spotify.com/embed/track/{{song.id}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </tr></td>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,51 @@
+
+{% extends "layout.html" %}
+{% block body %}
+    <div class="container" >
+    <h1 class="text-center">Prokof 2025</h1>
+    <h2 class="text-center">Your Personal Spotify Curator</h2>
+    </div>
+    <div class="container bottom-one" >
+        <h4>What Is Prokof?</h4>
+        <p>
+            Prokof (pronounced "PRO-COUGHED") is a Spotify curator that customizes song recommendations based on your listening preferences. Implementing various coding languages and frameworks, Prokof is designed to be multi-functional, personalizable, yet still easy to use. With Prokof, you can continue to expand your listening journey by exploring new music and creators!
+        </p> 
+        <p>
+            Click below to Try Prokof.
+        </p>
+        <a href="{{ url_for('function') }}" class="btn btn-primary" role="button">Try Prokof</a>
+    </div>
+
+    <div class="container bottom-one">
+        <h4>How Does It Work?</h4>
+        <p>
+            Prokof uses a combination of Python, Flask, SQL, JavaScript, HTML, and CSS to curate music and generate its website. Importantly, this application incorporates Spotify’s Web Application Programming Interface (API), a library of functions enabling the integration of Spotify’s artist and music data into Prokof. The following procedure illustrates the rough method of executing Prokof's programming: 
+            <ol>
+            <li>Connect Prokof’s Flask web application with Spotify’s Web API. </li>
+            <li>Given user server-side inputs into Prokof, request song metadata via the Spotify API. </li>
+            <li>Search songs/albums with similar audio metadata. </li>
+            <li>Output songs as a list onto the Prokof web application, along with a Spotify embed for each output. </li>
+            <li>Use Spotify’s playlist Web API features to compile and output a playlist combining all recommended songs if the user chooses to output personalized tracks/albums (as opposed to artists).  </li>
+            </ol>
+        </p>
+        <p>
+            Click below to learn how to use Prokof. 
+
+        </p>
+        <a href="{{ url_for('instructions') }}" class="btn btn-primary" role="button">Instructions on Prokof</a>
+        
+    </div>
+
+    <div class="container bottom-one">
+        <h4>Why Prokof?</h4>
+        <p>
+            Compared to other popular song generators, Prokof holds several advantages:
+            <ul>
+                <li>Improved customizability: Unlike most others which only allow one song input, Prokof allows users to input multiple songs to personalize recommendations. </li>
+                <li>Price: Prokof is free to use, with no hidden costs or subscriptions.</li>
+                <li>Modifications: Prokof is open-source, allowing users to view and modify the code.</li>
+            </ul>
+        </p>
+        <a href="{{ url_for('homepage') }}" class="btn btn-primary" role="button">Back to Top</a>
+    </div>
+{% endblock %}

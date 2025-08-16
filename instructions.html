@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+{% block body %}
+    <div class="container" ></div>
+    <h1 class="text-center">Instructions</h1>
+    <h2 class="text-center bottom-one">How to Use Prokof, Notes, and Tips</h2>
+    <div class="container numbercol250 bottom-one" >
+        <h5 class="text-left"><span class="glyphicon glyphicon-search"></span></i> Update: In November 2024, Spotify restricted public users' Web API use cases to a very limited collection of endpoints. As a result, Prokof has been forced to use the very limited data that Spotify still offers, which may result in slightly less functionality. To learn more about this update, visit  <a>
+            <a href="https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api" target="_blank">Spotify's Web API Changes</a>
+        </a>
+            
+        </a> </h5>
+    </div> 
+
+    <div class="container" >
+        <h3 >STEP 1. Choose a Mode</h3>
+        <p class = "bottom-one">
+            Prokof has three modes, each recommending a different number of songs based on your input: mode 1 recommends a maximum of 50 songs, mode 2 20 songs, and mode 3 10 songs. While all three modes use the same algorithm, their processing speeds differ; as expected, mode 1 is the slowest and mode 3 is the fastest. To choose a mode, click on the "Try Prok" button on the homepage, which will take you to the instructions page. From there, select your desired mode.
+        </p>
+
+        <h3>STEP 2. Choose Your Songs</h3>
+        <p class = "bottom-one">
+            Once you have chose a mode, you will be redirected to a page to enter your inputs. You can input up to 5 songs, and for each selection, you should enter the song name and artist name in the respective fields. You do not have to input all 5 songs, but you must input at least one song. Note the following: 
+            <ul>
+                <li>Prokof will only accept song names and artist names that are in Spotify's database. If you input a song that is not in Spotify's database, Prokof will not be able to find it.</li>
+                <li>Prokof will only accept song names and artist names that are spelled correctly. If you input a song or artist name with a typo, Prokof may not be able to find it.</li>
+                <li>Prokof will only accept song names and artist names that are in English. If you input a song or artist name in another language, Prokof may not be able to find it.</li>
+            </ul>
+            Press "Submit" once you have entered your inputs.  
+        </p>
+        <h3>STEP 3. View Your Recommendations!</h3>
+        <p class = "bottom-one">
+            After you have submitted your inputs, Prokof will process your request and generate a list of recommended songs based on your inputs. You will be redirected to a page that displays your recommendations, which will include the song name, artist name, and a Spotify embed for each song. You can listen to the songs directly from the page by clicking on the Spotify embed.
+        </p>
+        <a href="{{ url_for('function') }}" class="btn btn-primary" role="button">Try Prokof Now!</a>
+    </div>
+    
+{% endblock %}
